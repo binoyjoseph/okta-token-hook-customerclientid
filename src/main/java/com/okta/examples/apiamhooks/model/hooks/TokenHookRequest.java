@@ -26,6 +26,7 @@ public class TokenHookRequest {
         public static class Context {
 
             private User user = new User();
+            private Request request = new Request();
 
             @lombok.Data
             @NoArgsConstructor
@@ -43,6 +44,25 @@ public class TokenHookRequest {
                     private String login;
                     private String firstName;
                     private String lastName;
+                }
+            }
+
+            @lombok.Data
+            @NoArgsConstructor
+            @JsonIgnoreProperties(ignoreUnknown = true)
+            public static class Request {
+
+                private String id;
+                private Url url = new Url();
+                private String ipAddress;
+
+
+                @lombok.Data
+                @NoArgsConstructor
+                @JsonIgnoreProperties(ignoreUnknown = true)
+                public static class Url {
+
+                    private String value;
                 }
             }
         }
