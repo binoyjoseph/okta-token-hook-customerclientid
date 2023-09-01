@@ -1,0 +1,15 @@
+#okta-sign-in.auth-container .o-form-head {
+    font-family: 'Futura Std', sans-serif;    
+    font-size: 19px;
+    color: #0D5257;
+  }
+  #okta-sign-in.auth-container .o-form-label {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #333333;
+  }
+  #okta-sign-in.auth-container .o-form-input {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #333333;
+  }
